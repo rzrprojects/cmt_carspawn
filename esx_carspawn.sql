@@ -1,0 +1,1 @@
+ALTER TABLE `owned_vehicles` ADD `admin` BOOLEAN NOT NULL DEFAULT FALSE AFTER `owner`;
