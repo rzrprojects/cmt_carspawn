@@ -43,13 +43,13 @@ RegisterCommand("admincar", function(source, args)
     end
 end, true)
 
-RegisterCommand("carspawn", function(source)
+RegisterCommand("cmt_carspawn", function(source)
     local xPlayer = ESX.GetPlayerFromId(source)
-    TriggerClientEvent('carspawn:openmenu', xPlayer.source)
+    TriggerClientEvent('cmt_carspawn:openmenu', xPlayer.source)
 end, true)
 
 
-ESX.RegisterServerCallback('carspawn:getVehicles', function(source, cb)
+ESX.RegisterServerCallback('cmt_carspawn:getVehicles', function(source, cb)
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
     local vehicules = {}
@@ -69,8 +69,8 @@ ESX.RegisterServerCallback('carspawn:getVehicles', function(source, cb)
         cb(vehicules)
     end)
 end)
-RegisterServerEvent("carspawn:modifyAdminCarState")
-AddEventHandler("carspawn:modifyAdminCarState", function(admin, plate)
+RegisterServerEvent("cmt_carspawn:modifyAdminCarState")
+AddEventHandler("cmt_carspawn:modifyAdminCarState", function(admin, plate)
     MySQL.Sync.execute('UPDATE owned_vehicles SET admin =@admin WHERE plate=@plate', {
         ['@admin'] = admin,
         ['@plate'] = plate
