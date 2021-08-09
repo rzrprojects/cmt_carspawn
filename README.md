@@ -22,7 +22,7 @@ Installation:
 Requirements: [es_extended](https://github.com/esx-framework/es_extended)
 
 Permissions:
-  - add_ace group.<group> command.carspawn allow  (give that only to people you trust)
-  - add_ace group.<group> command.admincar allow  (give that to your mods or sups)
+  - add_ace group.owner command.carspawn allow  (give that only to people you trust)
+  - add_ace group.mod command.admincar allow  (give that to your mods or sups)
 
 
