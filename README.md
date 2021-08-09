@@ -3,18 +3,22 @@ With this ressource you can spawn vehicles directly from your database where the
 
 (Because this is **FailRP** on Rolleplay servers, the plate is default set to **Admin**)
 
+
+
 ## Commands
   - **admincar enable/disable <plate>** (allow or disallow the owner of the vehicle to spawn it via dis menu - you can also use true/false)
   - **admincar plate <plate>** (set the plate of the vehicle your'e in, you must be in the Driver's seat)
   - **carspawn** (open the menu where you could spawn vehicles)
 
-##Setup
-Requirements:
-  [es_extended](https://github.com/esx-framework/es_extended)
   
-Installation:
+  
+##Setup
+  Installation:
   - Import the **cmt_carspawn.sql** file to your database
   - add **start cmt_carspawn** to your server.cfg file
+  
+Requirements: [es_extended](https://github.com/esx-framework/es_extended)
+
 
 
 
