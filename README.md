@@ -1,4 +1,7 @@
-# cmt_carspawn - Span Admin Cars
+# cmt_carspawn - Spawn Admin Cars
+With this ressource you can spawn vehicles directly from your database where these are stored. You can tune them like you want and spawn them wherever you want.
+(Because this is **FailRP** on Rolleplay servers, the plate is default set to **Admin**)
+
 Requirements:
   [es_extended](https://github.com/esx-framework/es_extended)
   
